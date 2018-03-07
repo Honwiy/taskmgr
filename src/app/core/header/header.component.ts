@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { MdIconRegistry } from "@angular/material";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  @Output() toggle = new EventEmitter<void>();
+  constructor(){}
 
   ngOnInit() {
+  }
+
+  openSidebar(){
+    this.toggle.emit();
   }
 
 }

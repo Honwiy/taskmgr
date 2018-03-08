@@ -1,5 +1,4 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HttpModule } from "@angular/http";
 import { DomSanitizer } from "@angular/platform-browser";
 import { MdIconRegistry } from "@angular/material";
@@ -8,12 +7,13 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { loadSvgResources } from '../utils/svg.util';
 import { SharedModule } from "../shared/shared.module";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   imports: [
-    CommonModule,
     HttpModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule
 
   ],
   declarations: [

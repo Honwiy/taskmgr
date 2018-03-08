@@ -4,6 +4,8 @@ import {  MdToolbarModule } from "@angular/material";
 import { CoreModule } from "./core/core.module";
 import { MdSidenavModule } from "@angular/material";
 import { AppComponent } from './app.component';
+import {LoginModule} from './login/login.module';
+import { AppRoutingModule } from "./app-routing.module";
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     CoreModule,
-    MdSidenavModule
+    LoginModule,
+    MdSidenavModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

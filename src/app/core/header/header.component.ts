@@ -9,13 +9,21 @@ import { MdIconRegistry } from "@angular/material";
 export class HeaderComponent implements OnInit {
 
   @Output() toggle = new EventEmitter<void>();
-  constructor(){}
+  @Output() toggleDarkTheme = new EventEmitter<boolean>();
+
+  constructor(){
+
+  }
 
   ngOnInit() {
   }
 
   openSidebar(){
     this.toggle.emit();
+  }
+
+  onChange(checked: boolean){
+    this.toggleDarkTheme.emit(checked);
   }
 
 }

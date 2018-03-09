@@ -3,10 +3,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 export const loadSvgResources = (ir: MdIconRegistry, ds: DomSanitizer) => {
   const imgDir = 'assets/img';
-  const avatarDir = `${imgDir}/avatar`;
   const sidebarDir = `${imgDir}/sidebar`;
   const iconDir = `${imgDir}/icons`;
   const dayDir = `${imgDir}/days`;
+  const avatarDir = `${imgDir}/avatar`;
+  
   ir.addSvgIconSetInNamespace('avatars', ds.bypassSecurityTrustResourceUrl(`${avatarDir}/avatars.svg`));
   ir.addSvgIcon('unassigned', ds.bypassSecurityTrustResourceUrl(`${avatarDir}/unassigned.svg`));
   ir.addSvgIcon('project', ds.bypassSecurityTrustResourceUrl(`${sidebarDir}/project.svg`));
@@ -20,5 +21,5 @@ export const loadSvgResources = (ir: MdIconRegistry, ds: DomSanitizer) => {
     11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
     21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
   ];
-  days.forEach(day => ir.addSvgIcon(`day${day}`, ds.bypassSecurityTrustResourceUrl(`${dayDir}/day${day}.svg`)));
+  days.forEach(d => ir.addSvgIcon(`day${d}`, ds.bypassSecurityTrustResourceUrl(`${dayDir}/day${d}.svg`)));
 };

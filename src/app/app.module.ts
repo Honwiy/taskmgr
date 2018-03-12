@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {LoginModule} from './login/login.module';
 import { AppRoutingModule } from "./app-routing.module";
 import { ProjectModule } from "./project/project.module";
+import { MdDialog } from '@angular/material';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { ProjectModule } from "./project/project.module";
     AppRoutingModule,
     ProjectModule
   ],
-  providers: [],
+  providers: [MdDialog],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -20,7 +20,7 @@ import { SharedModule } from "../shared/shared.module";
   ],
   entryComponents: [
     NewProjectComponent,
-    ProjectItemComponent
+    InviteComponent
   ]
 })
 export class ProjectModule { }

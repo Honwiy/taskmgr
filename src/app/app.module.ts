@@ -1,3 +1,4 @@
+import { TaskModule } from './task/task.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {  MdToolbarModule } from "@angular/material";
@@ -20,7 +21,8 @@ import { MdDialog } from '@angular/material';
     LoginModule,
     MdSidenavModule,
     AppRoutingModule,
-    ProjectModule
+    ProjectModule,
+    TaskModule
   ],
   providers: [MdDialog],
   bootstrap: [AppComponent]

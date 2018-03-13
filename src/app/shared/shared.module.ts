@@ -10,7 +10,14 @@ import {
   MdSlideToggleModule,
   MdGridListModule,
   MdDialogModule,
-  MdAutocompleteModule
+  MdAutocompleteModule,
+  MdMenuModule,
+  MdCheckboxModule,
+  MdTooltipModule,
+  MdRadioModule,
+  MdSelectModule,
+  MdDatepickerModule,
+  MdNativeDateModule
 } from "@angular/material";
 
 @NgModule({
@@ -25,7 +32,14 @@ import {
     MdSlideToggleModule,
     MdGridListModule,
     MdDialogModule,
-    MdAutocompleteModule
+    MdAutocompleteModule,
+    MdMenuModule,
+    MdCheckboxModule,
+    MdTooltipModule,
+    MdRadioModule,
+    MdSelectModule,
+    MdDatepickerModule,
+    MdNativeDateModule
   ],
   exports: [
     CommonModule,
@@ -38,7 +52,14 @@ import {
     MdSlideToggleModule,
     MdGridListModule,
     MdDialogModule,
-    MdAutocompleteModule
+    MdAutocompleteModule,
+    MdMenuModule,
+    MdCheckboxModule,
+    MdTooltipModule,
+    MdRadioModule,
+    MdSelectModule,
+    MdDatepickerModule,
+    MdNativeDateModule
   ],
   declarations: []
 })

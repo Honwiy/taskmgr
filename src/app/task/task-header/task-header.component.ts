@@ -9,6 +9,9 @@ export class TaskHeaderComponent implements OnInit {
 
   @Input() header = '';
   @Output() newTask = new EventEmitter<void>();
+  @Output() moveAll = new EventEmitter<void>();
+  @Output() delList = new EventEmitter<void>();
+  @Output() editList = new EventEmitter<void>();
   constructor() { }
 
   ngOnInit() {
@@ -18,4 +21,15 @@ export class TaskHeaderComponent implements OnInit {
     this.newTask.emit();
   }
 
+  onMoveAllClick() {
+    this.moveAll.emit();
+  }
+
+  onDelListClick() {
+    this.delList.emit();
+ }
+
+ onEditListClick() {
+    this.editList.emit();
+ }
 }

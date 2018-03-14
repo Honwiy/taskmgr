@@ -1,3 +1,4 @@
+import { CopyTaskComponent } from './../task/copy-task/copy-task.component';
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { HttpModule } from "@angular/http";
 import { DomSanitizer } from "@angular/platform-browser";
@@ -9,6 +10,7 @@ import { loadSvgResources } from '../utils/svg.util';
 import { SharedModule } from "../shared/shared.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
+import 'hammerjs';
 @NgModule({
   imports: [
     HttpModule,
